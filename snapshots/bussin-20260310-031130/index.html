@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FF6B00">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Bussin">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Bussin | Ride with Certainty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/bussin_logo_dualcolor.svg">
+  <link rel="stylesheet" href="styles.css?v=20260310-10">
+</head>
+<body>
+  <main id="onboarding-screen" class="mobile-shell auth-shell">
+    <section class="onboarding-hero">
+      <div class="onboarding-mark" aria-label="Bussin">
+        <h1 class="onboarding-wordmark" aria-label="Bussin">
+          <span style="--letter-index:0">B</span>
+          <span style="--letter-index:1">U</span>
+          <span style="--letter-index:2">S</span>
+          <span style="--letter-index:3">S</span>
+          <span style="--letter-index:4">I</span>
+          <span style="--letter-index:5">N</span>
+        </h1>
+      </div>
+      <button id="continue-btn" class="primary-action" type="button">Continue</button>
+    </section>
+  </main>
+
+  <main id="auth-screen" class="mobile-shell auth-shell hidden">
+    <section class="panel auth-panel">
+      <p class="brand">Bussin</p>
+      <h2 id="auth-title">Sign In</h2>
+      <p id="auth-subtitle" class="panel-note">Continue using Google or your phone number.</p>
+
+      <div class="auth-mode-row">
+        <button id="auth-signin-btn" class="mode-btn active" type="button">Sign In</button>
+        <button id="auth-create-btn" class="mode-btn" type="button">Create Account</button>
+      </div>
+
+      <button id="google-auth-btn" class="secondary-action" type="button">Continue with Google</button>
+
+      <div class="form-field auth-field">
+        <label for="auth-name">Name</label>
+        <input id="auth-name" type="text" placeholder="Enter your name">
+      </div>
+      <div class="form-field auth-field">
+        <label for="phone-number">Phone Number</label>
+        <input id="phone-number" type="tel" placeholder="+63 9XX XXX XXXX">
+      </div>
+      <button id="phone-auth-btn" class="primary-action" type="button">Continue with Phone</button>
+      <p id="auth-result" class="booking-result"></p>
+
+      <section id="verify-section" class="verify-section hidden">
+        <p class="panel-note">Verification required before continuing.</p>
+        <div class="form-field auth-field">
+          <label for="verification-code">Verification Code</label>
+          <input id="verification-code" type="text" placeholder="Enter 6-digit code">
+        </div>
+        <button id="verify-btn" class="primary-action" type="button">Verify and Continue</button>
+      </section>
+    </section>
+  </main>
+
+  <div id="post-auth-loader" class="post-auth-loader hidden" aria-live="polite" aria-busy="true">
+    <section class="post-auth-loader-card">
+      <p class="post-auth-loader-label">Bussin</p>
+      <p class="post-auth-loader-title">Taking you to the app</p>
+      <p class="post-auth-loader-copy">Loading routes, stops, and live tracking demo...</p>
+      <div class="post-auth-loader-dots" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+  </div>
+
+  <main id="app-shell" class="mobile-shell hidden">
+    <div id="compact-topbar" class="compact-topbar">
+      <span class="compact-title">Bussin</span>
+      <button id="compact-search-btn" class="compact-search-btn" type="button" aria-label="Search">&#128269;</button>
+    </div>
+    <div class="app-logo-badge" aria-label="Bussin logo">
+      <img src="assets/bussin_logo_dualcolor.svg" alt="Bussin">
+    </div>
+    <section id="page-home" class="app-page active">
+      <section class="map-panel home-map-panel">
+        <div class="map-labels">
+          <span>Bus Live Tracking</span>
+          <span id="updated-at">Updated just now</span>
+        </div>
+        <div class="tracking-filter-row">
+          <button id="track-bus-btn" class="track-filter-btn active" type="button">Buses</button>
+          <button id="track-jeep-btn" class="track-filter-btn" type="button">Modern Jeeps</button>
+        </div>
+        <p id="tracking-status" class="form-note">Demo Tracking: ON</p>
+        <div class="live-map-shell">
+          <div id="live-map" class="live-map"></div>
+          <p id="map-overlay-text" class="map-overlay-text">Showing bus tracking</p>
+        </div>
+      </section>
+
+      <section id="home-ride-notice" class="panel home-ride-notice hidden" role="button" tabindex="0" aria-label="Open active ride details">
+        <div class="panel-title-row">
+          <h2 id="home-ride-notice-title">You have an active ride</h2>
+          <span id="home-ride-notice-badge" class="badge">Upcoming</span>
+        </div>
+        <p id="home-ride-notice-copy" class="panel-note">Check Activity for details.</p>
+      </section>
+
+      <header class="hero home-search-card">
+        <p class="brand">WHERE TO?</p>
+        <div id="search-autocomplete-wrap" class="search-autocomplete-wrap">
+          <div id="route-search-row" class="search-row">
+            <input id="route-search" type="text" placeholder="Search route or destination" autocomplete="off">
+            <button id="refresh-btn" type="button" aria-label="Refresh tracking">&#10227;</button>
+          </div>
+          <div id="search-suggestions" class="search-suggestions hidden"></div>
+          <p id="search-feedback" class="search-feedback hidden"></p>
+        </div>
+        <section id="plan-trip-section" class="plan-trip-inline">
+          <div class="panel-title-row">
+            <h2>Plan Your Trip</h2>
+            <span class="badge">Quick Book</span>
+          </div>
+          <p id="plan-mode-hint" class="ux-hint">Choose what to book first to continue.</p>
+          <div class="booking-mode-row">
+            <button id="mode-jeep-btn" class="mode-btn" type="button">Book a Modern Jeep Seat</button>
+            <button id="mode-bus-btn" class="mode-btn" type="button">Book a Bus Seat</button>
+          </div>
+          <div id="trip-fields-wrap" class="hidden">
+            <div class="trip-form-grid">
+              <div class="form-field">
+                <label for="pickup-stop">Pickup Area</label>
+                <small id="destination-selected-note" class="form-note destination-selected-note hidden"></small>
+                <div class="pickup-action-row">
+                  <select id="pickup-stop">
+                    <option value="">Select pickup</option>
+                  </select>
+                  <button id="choose-map-pickup-btn" class="map-pick-btn" type="button">Choose from map</button>
+                </div>
+                <small class="form-note">Pickup points are limited to national-road corridors.</small>
+              </div>
+              <div class="destination-action-row">
+                <div id="destination-field-wrap" class="form-field">
+                  <label for="destination-stop">Destination</label>
+                  <div class="destination-map-row">
+                    <select id="destination-stop">
+                      <option value="">Select destination</option>
+                    </select>
+                    <button id="choose-map-destination-btn" class="map-pick-btn" type="button">Choose from map</button>
+                  </div>
+                </div>
+                <button id="find-route-btn" class="primary-action" type="button" disabled>Find Best Route</button>
+              </div>
+            </div>
+            <p id="trip-plan-result" class="booking-result"></p>
+          </div>
+        </section>
+      </header>
+      <div id="search-backdrop" class="search-backdrop hidden"></div>
+
+      <section id="live-vehicles-section" class="panel">
+        <div class="panel-title-row">
+          <h2>Live Vehicles</h2>
+          <span id="vehicle-count" class="badge"></span>
+        </div>
+        <div class="tracking-filter-row">
+          <button id="live-bus-btn" class="track-filter-btn active" type="button">Buses</button>
+          <button id="live-jeep-btn" class="track-filter-btn" type="button">Modern Jeeps</button>
+        </div>
+        <ul id="vehicle-list" class="card-list"></ul>
+      </section>
+
+      <section id="commercial-section" class="panel">
+        <div id="ad-slots" class="ad-slots"></div>
+      </section>
+    </section>
+
+    <section id="page-seat" class="app-page hidden">
+      <section class="panel">
+        <div class="panel-title-row">
+          <h2>Seat Selection</h2>
+          <span id="seat-mode-badge" class="badge">Modern Jeep</span>
+        </div>
+        <p id="selected-route-summary" class="panel-note">Select seats for your trip.</p>
+        <div id="seat-route-panel" class="seat-route-panel hidden">
+          <div class="panel-title-row">
+            <h3 class="section-title">Route Highlight</h3>
+            <span id="seat-route-tag" class="badge">Route Preview</span>
+          </div>
+          <p id="seat-route-caption" class="panel-note">Road path preview.</p>
+          <div id="seat-route-map" class="seat-route-map"></div>
+        </div>
+        <div class="seat-summary">
+          <span id="seat-count-summary">Seats selected: 0</span>
+          <span id="seat-fare-summary">Estimated fare: PHP 0</span>
+        </div>
+        <div id="seat-grid" class="seat-grid"></div>
+        <div class="payment-row">
+          <label for="payment-method">Payment</label>
+          <select id="payment-method">
+            <option value="cash">Cash</option>
+            <option value="digital">Digital</option>
+          </select>
+        </div>
+        <button id="book-seat-btn" class="primary-action" type="button" disabled>Book Selected Seats</button>
+        <p id="booking-result" class="booking-result"></p>
+      </section>
+      <button id="back-home-btn" class="secondary-action" type="button">Back to Home</button>
+    </section>
+
+    <section id="page-map" class="app-page hidden map-page">
+      <div class="map-topbar">
+        <button id="map-back-btn" class="map-top-btn" type="button">Back</button>
+        <input id="map-search-input" type="text" placeholder="Search destination on map">
+      </div>
+      <div id="full-map" class="full-map"></div>
+      <ul id="map-place-list" class="map-place-list"></ul>
+
+      <div id="map-confirm-sheet" class="map-confirm-sheet hidden">
+        <p id="map-selected-label">Selected destination:</p>
+        <div class="map-confirm-actions">
+          <button id="map-back-home-btn" class="secondary-action" type="button">Back to Home</button>
+          <button id="map-confirm-booking-btn" class="primary-action" type="button">Confirm Booking</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="page-activity" class="app-page hidden">
+      <section class="panel">
+        <div class="panel-title-row">
+          <h2>Activity</h2>
+          <span class="badge">Trips</span>
+        </div>
+        <h3 class="section-title">Upcoming</h3>
+        <ul id="trip-upcoming-list" class="dashboard-list"></ul>
+        <h3 class="section-title">Ongoing</h3>
+        <ul id="trip-ongoing-list" class="dashboard-list"></ul>
+        <h3 class="section-title">Completed</h3>
+        <ul id="trip-completed-list" class="dashboard-list"></ul>
+        <h3 class="section-title">Cancelled</h3>
+        <ul id="trip-cancelled-list" class="dashboard-list"></ul>
+        <h3 class="section-title">Transactions</h3>
+        <ul id="transaction-list" class="dashboard-list"></ul>
+        <p id="activity-result" class="booking-result"></p>
+      </section>
+    </section>
+
+    <section id="page-user" class="app-page hidden">
+      <section class="panel">
+        <div class="panel-title-row">
+          <h2 id="user-dashboard-title">Dashboard</h2>
+          <span class="badge">My Account</span>
+        </div>
+        <div class="dashboard-metrics">
+          <article class="metric-card">
+            <p class="metric-label">Active Trips</p>
+            <p id="metric-active-trips" class="metric-value">0</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Total Transactions</p>
+            <p id="metric-transactions" class="metric-value">0</p>
+          </article>
+          <article class="metric-card">
+            <p class="metric-label">Completed Trips</p>
+            <p id="metric-completed-trips" class="metric-value">0</p>
+          </article>
+        </div>
+
+        <div class="user-sections">
+          <button id="epayment-link-btn" class="user-link-btn" type="button">
+            <span class="user-link-title">E-Payment Link</span>
+            <span class="user-link-sub">Manage cards, wallets, and payment methods</span>
+          </button>
+
+          <article class="user-settings-card">
+            <p class="user-link-title">Settings</p>
+            <button id="language-btn" class="user-sub-btn" type="button">Language</button>
+            <button id="saved-places-btn" class="user-sub-btn" type="button">Saved Places</button>
+            <button id="theme-toggle-btn" class="user-sub-btn" type="button">Switch to Dark Mode</button>
+          </article>
+
+          <button id="support-center-btn" class="user-link-btn" type="button">
+            <span class="user-link-title">Support Center</span>
+            <span class="user-link-sub">Help, reports, and contact options</span>
+          </button>
+        </div>
+        <button id="logout-btn" class="secondary-action" type="button">Log Out</button>
+        <p id="user-action-result" class="booking-result"></p>
+      </section>
+    </section>
+  </main>
+
+  <nav id="bottom-nav" class="bottom-nav hidden">
+    <button id="nav-home" class="nav-btn active" type="button" aria-label="Home" title="Home">
+      <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 3.5 3.75 10.2a1 1 0 0 0-.37.78v8.27a1.5 1.5 0 0 0 1.5 1.5h5.24a1 1 0 0 0 1-1v-4.3a.88.88 0 0 1 .88-.88h.01a.88.88 0 0 1 .88.88v4.3a1 1 0 0 0 1 1h5.23a1.5 1.5 0 0 0 1.5-1.5V11a1 1 0 0 0-.37-.78L12 3.5z"/>
+      </svg>
+    </button>
+    <button id="nav-activity" class="nav-btn" type="button" aria-label="Activity" title="Activity">
+      <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8zm0 1.8a6.2 6.2 0 1 1-6.2 6.2A6.2 6.2 0 0 1 12 5.8zm-.9 2.2a.9.9 0 0 0-.9.9v3.76a.9.9 0 0 0 .35.71l2.7 2.1a.9.9 0 1 0 1.1-1.43L12 12.24V8.9a.9.9 0 0 0-.9-.9z"/>
+      </svg>
+    </button>
+    <button id="nav-user" class="nav-btn" type="button" aria-label="Dashboard" title="Dashboard">
+      <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5.3 4h4.9a1.3 1.3 0 0 1 1.3 1.3v4.9a1.3 1.3 0 0 1-1.3 1.3H5.3A1.3 1.3 0 0 1 4 10.2V5.3A1.3 1.3 0 0 1 5.3 4zm8.5 0h4.9A1.3 1.3 0 0 1 20 5.3v4.9a1.3 1.3 0 0 1-1.3 1.3h-4.9a1.3 1.3 0 0 1-1.3-1.3V5.3A1.3 1.3 0 0 1 13.8 4zm-8.5 8.5h4.9a1.3 1.3 0 0 1 1.3 1.3v4.9a1.3 1.3 0 0 1-1.3 1.3H5.3A1.3 1.3 0 0 1 4 18.7v-4.9a1.3 1.3 0 0 1 1.3-1.3zm8.5 0h4.9a1.3 1.3 0 0 1 1.3 1.3v4.9a1.3 1.3 0 0 1-1.3 1.3h-4.9a1.3 1.3 0 0 1-1.3-1.3v-4.9a1.3 1.3 0 0 1 1.3-1.3z"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="promo-modal" class="promo-modal hidden">
+    <div class="promo-card">
+      <button id="promo-close" class="promo-close" type="button">x</button>
+      <p class="promo-tag">Limited Promo</p>
+      <h3 id="promo-title">Route Launch Discount</h3>
+      <p id="promo-copy">Get PHP 20 off your first provincial bus seat booking this week.</p>
+      <button id="promo-cta" class="primary-action" type="button">View Promo</button>
+    </div>
+  </div>
+
+  <div id="quick-ad-toast" class="quick-ad-toast hidden"></div>
+
+  <div id="welcome-modal" class="promo-modal hidden">
+    <div class="promo-card">
+      <p class="promo-tag">Bussin</p>
+      <h3 id="welcome-title">Welcome!</h3>
+      <p id="welcome-copy">You are now signed in.</p>
+      <button id="welcome-continue-btn" class="primary-action" type="button">Continue to Home</button>
+    </div>
+  </div>
+
+  <div id="ticket-modal" class="promo-modal hidden">
+    <div class="promo-card ticket-card">
+      <p class="promo-tag">Booking Confirmed</p>
+      <h3 id="ticket-title">Trip Ticket</h3>
+      <p class="panel-note">Live bus tracking and your current location</p>
+      <div id="ticket-live-map" class="ticket-live-map"></div>
+      <div class="ticket-grid">
+        <p id="ticket-transaction">TXN: -</p>
+        <p id="ticket-route">Route: -</p>
+        <p id="ticket-from">From: -</p>
+        <p id="ticket-to">To: -</p>
+        <p id="ticket-mode">Vehicle: -</p>
+        <p id="ticket-payment">Payment: -</p>
+        <p id="ticket-fare">Fare: -</p>
+        <p id="ticket-time">Time: -</p>
+      </div>
+      <div class="map-confirm-actions">
+        <button id="ticket-close-btn" class="secondary-action" type="button">Close</button>
+        <button id="ticket-activity-btn" class="primary-action" type="button">View Activity</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="trip-detail-modal" class="promo-modal hidden">
+    <div class="promo-card ticket-card">
+      <p class="promo-tag">Trip Details</p>
+      <h3 id="trip-detail-title">Trip</h3>
+      <p class="panel-note">Route highlight</p>
+      <div id="trip-detail-route-map" class="trip-detail-route-map"></div>
+      <div class="ticket-grid">
+        <p id="trip-detail-status">Status: -</p>
+        <p id="trip-detail-route">Route: -</p>
+        <p id="trip-detail-from">From: -</p>
+        <p id="trip-detail-to">To: -</p>
+        <p id="trip-detail-mode">Vehicle: -</p>
+        <p id="trip-detail-seats">Seats: -</p>
+        <p id="trip-detail-payment">Payment: -</p>
+        <p id="trip-detail-fare">Fare: -</p>
+        <p id="trip-detail-time">Booked: -</p>
+        <p id="trip-detail-gps">Ride GPS: -</p>
+      </div>
+      <div class="map-confirm-actions">
+        <button id="trip-detail-close-btn" class="secondary-action" type="button">Close</button>
+        <button id="trip-cancel-btn" class="danger-action hidden" type="button">Cancel Ride</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tutorial-modal" class="promo-modal hidden">
+    <div class="promo-card tutorial-card">
+      <p class="promo-tag">How To Use Bussin</p>
+      <h3 id="tutorial-title">Welcome to Bussin</h3>
+      <p id="tutorial-copy">Let us quickly walk through the core flow.</p>
+      <div class="tutorial-progress">
+        <span id="tutorial-step-label">Step 1 of 4</span>
+      </div>
+      <div class="map-confirm-actions">
+        <button id="tutorial-skip-btn" class="secondary-action" type="button">Skip</button>
+        <button id="tutorial-back-btn" class="secondary-action" type="button">Back</button>
+        <button id="tutorial-next-btn" class="primary-action" type="button">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="wallet-modal" class="promo-modal hidden">
+    <div class="promo-card">
+      <p class="promo-tag">Digital Payment</p>
+      <h3>Select E-Wallet</h3>
+      <div class="wallet-grid">
+        <button class="wallet-btn" data-wallet="GCash" type="button">GCash</button>
+        <button class="wallet-btn" data-wallet="GoTyme" type="button">GoTyme</button>
+        <button class="wallet-btn" data-wallet="Maya" type="button">Maya</button>
+        <button class="wallet-btn" data-wallet="GrabPay" type="button">GrabPay</button>
+      </div>
+      <p id="wallet-linking-note" class="booking-result"></p>
+      <div class="map-confirm-actions">
+        <button id="wallet-cancel-btn" class="secondary-action" type="button">Cancel</button>
+        <button id="wallet-continue-btn" class="primary-action" type="button" disabled>Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tracking-modal" class="promo-modal hidden">
+    <div class="promo-card tracking-card">
+      <div class="panel-title-row">
+        <h3>Live Bus Tracking</h3>
+        <button id="tracking-close-btn" class="promo-close" type="button">x</button>
+      </div>
+      <p id="tracking-panel-note" class="panel-note">Tap a vehicle circle to view route and plate details.</p>
+      <div id="tracking-popup-map" class="tracking-popup-map"></div>
+      <div class="tracking-popup-menu">
+        <button id="popup-track-jeep-btn" class="popup-track-btn" type="button">Track Modern Jeep</button>
+        <button id="popup-track-bus-btn" class="popup-track-btn active" type="button">Track Buses</button>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="script.js?v=20260310-10"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="140" viewBox="0 0 460 140" fill="none">
+  <defs>
+    <linearGradient id="bussinWarmTop" x1="16" y1="14" x2="152" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAA00"/>
+      <stop offset="1" stop-color="#FF6B00"/>
+    </linearGradient>
+    <linearGradient id="bussinWarmBottom" x1="32" y1="72" x2="168" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8C42"/>
+      <stop offset="1" stop-color="#FF4500"/>
+    </linearGradient>
+    <linearGradient id="bussinFace" x1="66" y1="14" x2="106" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD26D"/>
+      <stop offset="1" stop-color="#FF9C00"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M24 70L66 28H150C170.987 28 188 45.0132 188 66C188 86.9868 170.987 104 150 104H66L24 70Z" fill="url(#bussinWarmTop)"/>
+  <path d="M24 70L66 112H162C182.987 112 200 94.9868 200 74C200 53.0132 182.987 36 162 36H66L24 70Z" fill="url(#bussinWarmBottom)" opacity="0.98"/>
+  <path d="M24 70L66 28V112L24 70Z" fill="#FF6B00"/>
+  <path d="M66 28L118 70L66 112V28Z" fill="url(#bussinFace)"/>
+
+  <text x="222" y="91" fill="#FF7900" font-family="Outfit, Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="3">BUSSIN</text>
+</svg>

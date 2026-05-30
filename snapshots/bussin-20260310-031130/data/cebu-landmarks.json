@@ -1,0 +1,253 @@
+{
+  "sources": [
+    {
+      "id": "cebu-gov-about",
+      "label": "Province of Cebu official overview",
+      "url": "https://www.cebu.gov.ph/about/"
+    },
+    {
+      "id": "cebu-gov-tourism",
+      "label": "Tourism in Cebu Province",
+      "url": "https://www.cebu.gov.ph/tourism-in-cebu-province/"
+    },
+    {
+      "id": "wikipedia-cebu",
+      "label": "Cebu landmark references",
+      "url": "https://en.wikipedia.org/wiki/Cebu"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "landmark-magellans-cross",
+      "name": "Magellan's Cross (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["magellans cross", "magellan cross", "sto nino area"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.293,
+      "lng": 123.9022
+    },
+    {
+      "id": "landmark-santo-nino",
+      "name": "Basilica Minore del Santo Nino (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["santo nino", "basilica del santo nino", "sto nino church"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.2942,
+      "lng": 123.9026
+    },
+    {
+      "id": "landmark-fort-san-pedro",
+      "name": "Fort San Pedro (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["fort san pedro", "fort"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.2924,
+      "lng": 123.9053
+    },
+    {
+      "id": "landmark-carbon",
+      "name": "Carbon Market (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["carbon", "carbon market"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.2922,
+      "lng": 123.9018
+    },
+    {
+      "id": "landmark-fuente",
+      "name": "Fuente Osmena Circle (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["fuente", "osmena circle"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3124,
+      "lng": 123.8941
+    },
+    {
+      "id": "landmark-ayala-cebu",
+      "name": "Ayala Center Cebu (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["ayala", "ayala center", "cebu business park"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.318,
+      "lng": 123.9054
+    },
+    {
+      "id": "landmark-sm-seaside",
+      "name": "SM Seaside City Cebu (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["sm seaside", "seaside cebu"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus"],
+      "lat": 10.2816,
+      "lng": 123.8808
+    },
+    {
+      "id": "landmark-ocean-park",
+      "name": "Cebu Ocean Park (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["ocean park", "cebu ocean park"],
+      "mappedDestination": "Cebu City",
+      "modes": ["bus"],
+      "lat": 10.2809,
+      "lng": 123.8851
+    },
+    {
+      "id": "landmark-temple-of-leah",
+      "name": "Temple of Leah (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["temple of leah", "busay temple"],
+      "mappedDestination": "Cebu City",
+      "modes": ["jeep"],
+      "lat": 10.3744,
+      "lng": 123.8534
+    },
+    {
+      "id": "landmark-tops",
+      "name": "Tops Lookout (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["tops", "tops cebu", "busay tops"],
+      "mappedDestination": "Cebu City",
+      "modes": ["jeep"],
+      "lat": 10.3922,
+      "lng": 123.8729
+    },
+    {
+      "id": "landmark-taoist-temple",
+      "name": "Cebu Taoist Temple (Landmark)",
+      "city": "Cebu City",
+      "aliases": ["taoist temple", "cebu taoist temple"],
+      "mappedDestination": "Cebu City",
+      "modes": ["jeep"],
+      "lat": 10.3421,
+      "lng": 123.8918
+    },
+    {
+      "id": "landmark-mactan-shrine",
+      "name": "Mactan Shrine (Landmark)",
+      "city": "Lapu-Lapu City",
+      "aliases": ["lapu lapu shrine", "mactan shrine"],
+      "mappedDestination": "Lapu-Lapu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3116,
+      "lng": 124.0156
+    },
+    {
+      "id": "landmark-fooda-consolacion",
+      "name": "Fooda Consolacion (Landmark)",
+      "city": "Consolacion",
+      "aliases": ["fooda consolacion", "fooda n810", "fooda highway consolacion"],
+      "mappedDestination": "Consolacion",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3781,
+      "lng": 123.9578
+    },
+    {
+      "id": "landmark-sm-consolacion",
+      "name": "SM Consolacion (Landmark)",
+      "city": "Consolacion",
+      "aliases": ["sm consolacion", "sm city consolacion"],
+      "mappedDestination": "Consolacion",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3764,
+      "lng": 123.9571
+    },
+    {
+      "id": "landmark-citymall-consolacion",
+      "name": "CityMall Consolacion (Landmark)",
+      "city": "Consolacion",
+      "aliases": ["citymall consolacion", "city mall consolacion", "citymall n810"],
+      "mappedDestination": "Consolacion",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3837,
+      "lng": 123.9629
+    }
+  ],
+  "pickups": [
+    {
+      "id": "pickup-landmark-fuente",
+      "name": "Fuente Osmena Circle (Landmark Pickup)",
+      "corridor": "N8",
+      "aliases": ["fuente pickup", "osmena circle pickup"],
+      "mappedPickup": "Cebu City - Fuente Osmena (N8)",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3124,
+      "lng": 123.8941
+    },
+    {
+      "id": "pickup-landmark-ayala",
+      "name": "Ayala Center Cebu (Landmark Pickup)",
+      "corridor": "Cebu Business Park",
+      "aliases": ["ayala pickup", "ayala center pickup"],
+      "mappedPickup": "IT Park, Cebu City",
+      "modes": ["bus", "jeep"],
+      "lat": 10.318,
+      "lng": 123.9054
+    },
+    {
+      "id": "pickup-landmark-sm-seaside",
+      "name": "SM Seaside City Cebu (Landmark Pickup)",
+      "corridor": "SRP",
+      "aliases": ["sm seaside pickup", "srp pickup"],
+      "mappedPickup": "Cebu South Bus Terminal (N. Bacalso Ave)",
+      "modes": ["bus"],
+      "lat": 10.2816,
+      "lng": 123.8808
+    },
+    {
+      "id": "pickup-landmark-carbon",
+      "name": "Carbon Market (Landmark Pickup)",
+      "corridor": "Downtown Cebu",
+      "aliases": ["carbon pickup", "carbon market pickup"],
+      "mappedPickup": "Cebu South Bus Terminal (N. Bacalso Ave)",
+      "modes": ["bus", "jeep"],
+      "lat": 10.2922,
+      "lng": 123.9018
+    },
+    {
+      "id": "pickup-landmark-magellan",
+      "name": "Magellan's Cross (Landmark Pickup)",
+      "corridor": "Downtown Cebu",
+      "aliases": ["magellans cross pickup"],
+      "mappedPickup": "Cebu South Bus Terminal (N. Bacalso Ave)",
+      "modes": ["bus", "jeep"],
+      "lat": 10.293,
+      "lng": 123.9022
+    },
+    {
+      "id": "pickup-landmark-mactan-shrine",
+      "name": "Mactan Shrine (Landmark Pickup)",
+      "corridor": "Mactan",
+      "aliases": ["lapu lapu shrine pickup", "mactan pickup"],
+      "mappedPickup": "Mactan Newtown Terminal",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3116,
+      "lng": 124.0156
+    },
+    {
+      "id": "pickup-landmark-fooda-consolacion",
+      "name": "Fooda Consolacion (Landmark Pickup)",
+      "corridor": "Cebu North Road (N810)",
+      "aliases": ["fooda consolacion pickup", "fooda n810 pickup"],
+      "mappedPickup": "Consolacion - Cebu North Road (N810)",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3781,
+      "lng": 123.9578
+    },
+    {
+      "id": "pickup-landmark-sm-consolacion",
+      "name": "SM Consolacion (Landmark Pickup)",
+      "corridor": "Cebu North Road (N810)",
+      "aliases": ["sm consolacion pickup"],
+      "mappedPickup": "Consolacion - Cebu North Road (N810)",
+      "modes": ["bus", "jeep"],
+      "lat": 10.3764,
+      "lng": 123.9571
+    }
+  ]
+}

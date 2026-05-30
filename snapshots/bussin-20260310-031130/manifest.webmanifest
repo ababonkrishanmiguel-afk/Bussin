@@ -1,0 +1,19 @@
+{
+  "name": "Bussin",
+  "short_name": "Bussin",
+  "description": "Ride with Certainty - Real-time bus and modern jeep coordination for Cebu commuters.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF8F0",
+  "theme_color": "#FF6B00",
+  "icons": [
+    {
+      "src": "assets/bussin_logo_dualcolor.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

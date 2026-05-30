@@ -1,0 +1,219 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  commuter
+  driver
+  admin
+}
+
+enum UserStatus {
+  active
+  disabled
+}
+
+enum VehicleCategory {
+  modern_jeepney
+  provincial_bus
+}
+
+enum TripStatus {
+  planned
+  active
+  ended
+  cancelled
+}
+
+enum PaymentType {
+  cash
+  digital
+}
+
+enum PaymentStatus {
+  pending
+  paid
+  refunded
+}
+
+enum BookingStatus {
+  reserved
+  boarded
+  cancelled
+}
+
+model User {
+  id           String     @id @default(cuid())
+  role         UserRole
+  name         String
+  phone        String     @unique
+  passwordHash String
+  status       UserStatus @default(active)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  driverProfile Driver?
+  bookings      Booking[]
+}
+
+model Driver {
+  id         String  @id @default(cuid())
+  userId     String  @unique
+  licenseNo  String  @unique
+  active     Boolean @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user  User   @relation(fields: [userId], references: [id])
+  trips Trip[]
+}
+
+model Vehicle {
+  id        String          @id @default(cuid())
+  plateNo   String          @unique
+  category  VehicleCategory
+  capacity  Int
+  active    Boolean         @default(true)
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+
+  trips Trip[]
+}
+
+model Route {
+  id                String   @id @default(cuid())
+  code              String   @unique
+  name              String
+  originStopId      String
+  destinationStopId String
+  active            Boolean  @default(true)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  originStop      Stop        @relation("OriginStop", fields: [originStopId], references: [id])
+  destinationStop Stop        @relation("DestinationStop", fields: [destinationStopId], references: [id])
+  routeStops      RouteStop[]
+  trips           Trip[]
+}
+
+model Stop {
+  id           String   @id @default(cuid())
+  name         String
+  lat          Float
+  lng          Float
+  municipality String
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  asOriginForRoutes      Route[] @relation("OriginStop")
+  asDestinationForRoutes Route[] @relation("DestinationStop")
+  routeStops             RouteStop[]
+}
+
+model RouteStop {
+  id                 String   @id @default(cuid())
+  routeId            String
+  stopId             String
+  sequence           Int
+  scheduledOffsetMin Int
+
+  route Route @relation(fields: [routeId], references: [id])
+  stop  Stop  @relation(fields: [stopId], references: [id])
+
+  @@unique([routeId, sequence])
+  @@unique([routeId, stopId])
+}
+
+model Trip {
+  id         String     @id @default(cuid())
+  routeId    String
+  vehicleId  String
+  driverId   String
+  status     TripStatus @default(planned)
+  startedAt  DateTime?
+  endedAt    DateTime?
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+
+  route         Route            @relation(fields: [routeId], references: [id])
+  vehicle       Vehicle          @relation(fields: [vehicleId], references: [id])
+  driver        Driver           @relation(fields: [driverId], references: [id])
+  locations     TripLocation[]
+  healthEvents  TripHealthEvent[]
+  bookings      Booking[]
+  bookingSeats  BookingSeat[]
+}
+
+model TripLocation {
+  id         String   @id @default(cuid())
+  tripId     String
+  capturedAt DateTime
+  lat        Float
+  lng        Float
+  speedKph   Float?
+  headingDeg Float?
+  accuracyM  Float?
+  source     String   @default("driver_phone")
+  createdAt  DateTime @default(now())
+
+  trip Trip @relation(fields: [tripId], references: [id])
+
+  @@index([tripId, capturedAt(sort: Desc)])
+}
+
+model TripHealthEvent {
+  id        String   @id @default(cuid())
+  tripId    String
+  type      String
+  value     String
+  createdAt DateTime @default(now())
+
+  trip Trip @relation(fields: [tripId], references: [id])
+}
+
+model Booking {
+  id              String        @id @default(cuid())
+  tripId          String
+  commuterUserId  String
+  seats           Int
+  fareTotal       Decimal       @db.Decimal(10, 2)
+  paymentType     PaymentType
+  paymentStatus   PaymentStatus @default(pending)
+  status          BookingStatus @default(reserved)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  trip          Trip            @relation(fields: [tripId], references: [id])
+  commuterUser  User            @relation(fields: [commuterUserId], references: [id])
+  selectedSeats BookingSeat[]
+  boardingEvent BoardingEvent?
+}
+
+model BookingSeat {
+  id         String   @id @default(cuid())
+  bookingId  String
+  tripId     String
+  seatNumber String
+  createdAt  DateTime @default(now())
+
+  booking Booking @relation(fields: [bookingId], references: [id])
+  trip    Trip    @relation(fields: [tripId], references: [id])
+
+  @@unique([tripId, seatNumber])
+  @@index([bookingId])
+}
+
+model BoardingEvent {
+  id                  String   @id @default(cuid())
+  bookingId           String   @unique
+  confirmedByDriverId String
+  confirmedAt         DateTime @default(now())
+
+  booking Booking @relation(fields: [bookingId], references: [id])
+}

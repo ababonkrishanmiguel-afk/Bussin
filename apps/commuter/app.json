@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Bussin Commuter",
+    "slug": "bussin-commuter",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF8F0"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.bussin.commuter"
+    },
+    "ios": {
+      "bundleIdentifier": "com.bussin.commuter"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}

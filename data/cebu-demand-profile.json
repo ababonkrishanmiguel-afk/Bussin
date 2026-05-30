@@ -1,0 +1,89 @@
+{
+  "sources": [
+    {
+      "id": "psa-2020-cebu-province",
+      "label": "PSA 2020 Census of Population and Housing (Cebu Province)",
+      "url": "https://psa.gov.ph/statistics/population-and-housing/node/1684059678"
+    },
+    {
+      "id": "cebu-mobility-survey-2026",
+      "label": "Cebu 2026 Transportation and Mobility Survey Results",
+      "url": "https://cebu.gov.ph/2026-transportation-and-mobility-survey-results-released/"
+    },
+    {
+      "id": "cebu-south-bus-terminal",
+      "label": "Cebu South Bus Terminal daily passenger estimate",
+      "url": "https://en.wikipedia.org/wiki/Cebu_South_Bus_Terminal"
+    },
+    {
+      "id": "osm-highway-tags",
+      "label": "OpenStreetMap highway tag reference",
+      "url": "https://wiki.openstreetmap.org/wiki/Key:highway"
+    }
+  ],
+  "zones": [
+    {
+      "name": "Cebu City Core (Fuente-Colon-Carbon)",
+      "lat": 10.2968,
+      "lng": 123.9012,
+      "level": "very_high",
+      "notes": "Core urban transfer area with dense daily commuting."
+    },
+    {
+      "name": "SM City Cebu - North Reclamation",
+      "lat": 10.3170,
+      "lng": 123.9185,
+      "level": "very_high",
+      "notes": "Major intermodal transfer and mall terminal zone."
+    },
+    {
+      "name": "Mandaue CBD / A.S. Fortuna Corridor",
+      "lat": 10.3298,
+      "lng": 123.9346,
+      "level": "high",
+      "notes": "Dense commercial corridor and transfer demand."
+    },
+    {
+      "name": "IT Park - Lahug Corridor",
+      "lat": 10.3292,
+      "lng": 123.9068,
+      "level": "high",
+      "notes": "High commuter volume from office and BPO concentration."
+    },
+    {
+      "name": "Consolacion National Highway",
+      "lat": 10.3764,
+      "lng": 123.9571,
+      "level": "high",
+      "notes": "Northbound corridor load toward Mandaue/Cebu City."
+    },
+    {
+      "name": "Talisay - Minglanilla Corridor",
+      "lat": 10.2446,
+      "lng": 123.8280,
+      "level": "high",
+      "notes": "South corridor with sustained commuter flows."
+    },
+    {
+      "name": "Lapu-Lapu / Mactan Bridge Corridor",
+      "lat": 10.3130,
+      "lng": 123.9448,
+      "level": "high",
+      "notes": "Bridge crossing and airport-side access demand."
+    },
+    {
+      "name": "Danao City Urban Node",
+      "lat": 10.5333,
+      "lng": 124.0272,
+      "level": "medium",
+      "notes": "Regional transfer node along north corridor."
+    },
+    {
+      "name": "Carcar City Rotunda",
+      "lat": 10.1073,
+      "lng": 123.6407,
+      "level": "medium",
+      "notes": "Southbound transfer and corridor branching point."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "bussin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Bussin monorepo - Ride with Certainty",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev:api": "pnpm --filter @bussin/api dev",
+    "build:api": "pnpm --filter @bussin/api build",
+    "start:api": "pnpm --filter @bussin/api start"
+  }
+}

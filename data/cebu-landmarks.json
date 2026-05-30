@@ -1,0 +1,2542 @@
+{
+    "sources":  [
+                    {
+                        "id":  "cebu-gov-about",
+                        "label":  "Province of Cebu official overview",
+                        "url":  "https://www.cebu.gov.ph/about/"
+                    },
+                    {
+                        "id":  "cebu-gov-tourism",
+                        "label":  "Tourism in Cebu Province",
+                        "url":  "https://www.cebu.gov.ph/tourism-in-cebu-province/"
+                    },
+                    {
+                        "id":  "wikipedia-cebu",
+                        "label":  "Cebu landmark references",
+                        "url":  "https://en.wikipedia.org/wiki/Cebu"
+                    },
+                    {
+                        "id":  "user-xlsx-cebu-landmarks",
+                        "label":  "User-provided Cebu transport landmarks workbook (highway corridor stops)",
+                        "url":  "c:\\Users\\Administrator\\Downloads\\cebu_transport_landmarks.xlsx"
+                    },
+                    {
+                        "id":  "wiki-sm-city-cebu",
+                        "label":  "SM City Cebu reference",
+                        "url":  "https://en.wikipedia.org/wiki/SM_City_Cebu"
+                    },
+                    {
+                        "id":  "wiki-robinsons-galleria-cebu",
+                        "label":  "Robinsons Galleria Cebu reference",
+                        "url":  "https://en.wikipedia.org/wiki/Robinsons_Galleria_Cebu"
+                    },
+                    {
+                        "id":  "wiki-cebu-doc",
+                        "label":  "Cebu Doctors\u0027 University Hospital reference",
+                        "url":  "https://en.wikipedia.org/wiki/Cebu_Doctors%27_University_Hospital"
+                    },
+                    {
+                        "id":  "wiki-vsmmc",
+                        "label":  "Vicente Sotto Memorial Medical Center reference",
+                        "url":  "https://en.wikipedia.org/wiki/Vicente_Sotto_Memorial_Medical_Center"
+                    },
+                    {
+                        "id":  "chonghua-contact",
+                        "label":  "Chong Hua Hospital Cebu and Mandaue official addresses",
+                        "url":  "https://chonghua.com.ph/contact"
+                    },
+                    {
+                        "id":  "gaisano-liloan",
+                        "label":  "Gaisano Grand Mall Liloan (National Highway)",
+                        "url":  "https://gaisanograndmalls.com/gaisano-grand-mall-liloan/"
+                    },
+                    {
+                        "id":  "gaisano-minglanilla",
+                        "label":  "Gaisano Grand Mall Minglanilla (Nat. Highway)",
+                        "url":  "https://gaisanograndmalls.com/gaisano-grand-mall-minglanilla/"
+                    },
+                    {
+                        "id":  "south-gen-hospital",
+                        "label":  "South General Hospital (Naga, Cebu)",
+                        "url":  "https://cdg.cebudocgroup.com.ph/about/hospitals/sgh"
+                    }
+                ],
+    "destinations":  [
+                         {
+                             "id":  "landmark-magellans-cross",
+                             "name":  "Magellan\u0027s Cross (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "magellans cross",
+                                             "magellan cross",
+                                             "sto nino area"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.293,
+                             "lng":  123.9022
+                         },
+                         {
+                             "id":  "landmark-santo-nino",
+                             "name":  "Basilica Minore del Santo Nino (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "santo nino",
+                                             "basilica del santo nino",
+                                             "sto nino church"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.2942,
+                             "lng":  123.9026
+                         },
+                         {
+                             "id":  "landmark-fort-san-pedro",
+                             "name":  "Fort San Pedro (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "fort san pedro",
+                                             "fort"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.2924,
+                             "lng":  123.9053
+                         },
+                         {
+                             "id":  "landmark-carbon",
+                             "name":  "Carbon Market (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "carbon",
+                                             "carbon market"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.2922,
+                             "lng":  123.9018
+                         },
+                         {
+                             "id":  "landmark-fuente",
+                             "name":  "Fuente Osmena Circle (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "fuente",
+                                             "osmena circle"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.3124,
+                             "lng":  123.8941
+                         },
+                         {
+                             "id":  "landmark-ayala-cebu",
+                             "name":  "Ayala Center Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "ayala",
+                                             "ayala center",
+                                             "cebu business park"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.318,
+                             "lng":  123.9054
+                         },
+                         {
+                             "id":  "landmark-sm-seaside",
+                             "name":  "SM Seaside City Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "sm seaside",
+                                             "seaside cebu"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus"
+                                       ],
+                             "lat":  10.2816,
+                             "lng":  123.8808
+                         },
+                         {
+                             "id":  "landmark-ocean-park",
+                             "name":  "Cebu Ocean Park (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "ocean park",
+                                             "cebu ocean park"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus"
+                                       ],
+                             "lat":  10.2809,
+                             "lng":  123.8851
+                         },
+                         {
+                             "id":  "landmark-temple-of-leah",
+                             "name":  "Temple of Leah (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "temple of leah",
+                                             "busay temple"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "jeep"
+                                       ],
+                             "lat":  10.3744,
+                             "lng":  123.8534
+                         },
+                         {
+                             "id":  "landmark-tops",
+                             "name":  "Tops Lookout (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "tops",
+                                             "tops cebu",
+                                             "busay tops"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "jeep"
+                                       ],
+                             "lat":  10.3922,
+                             "lng":  123.8729
+                         },
+                         {
+                             "id":  "landmark-taoist-temple",
+                             "name":  "Cebu Taoist Temple (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "taoist temple",
+                                             "cebu taoist temple"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "jeep"
+                                       ],
+                             "lat":  10.3421,
+                             "lng":  123.8918
+                         },
+                         {
+                             "id":  "landmark-mactan-shrine",
+                             "name":  "Mactan Shrine (Landmark)",
+                             "city":  "Lapu-Lapu City",
+                             "aliases":  [
+                                             "lapu lapu shrine",
+                                             "mactan shrine"
+                                         ],
+                             "mappedDestination":  "Lapu-Lapu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.3116,
+                             "lng":  124.0156
+                         },
+                         {
+                             "id":  "landmark-fooda-consolacion",
+                             "name":  "Fooda Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "fooda consolacion",
+                                             "fooda n810",
+                                             "fooda highway consolacion"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.3781,
+                             "lng":  123.9578
+                         },
+                         {
+                             "id":  "landmark-sm-consolacion",
+                             "name":  "SM Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "sm consolacion",
+                                             "sm city consolacion"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.38064,
+                             "lng":  123.96433
+                         },
+                         {
+                             "id":  "landmark-citymall-consolacion",
+                             "name":  "CityMall Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "citymall consolacion",
+                                             "city mall consolacion",
+                                             "citymall n810"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ],
+                             "lat":  10.3837,
+                             "lng":  123.9629
+                         },
+                         {
+                             "id":  "landmark-sm-city-cebu",
+                             "name":  "SM City Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "SM City Cebu",
+                                             "Cebu City",
+                                             "Mabolo",
+                                             "Mall",
+                                             "North Reclamation Area",
+                                             "SM City Cebu Cebu City",
+                                             "along North Reclamation Area"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-cebu-north-bus-terminal",
+                             "name":  "Cebu North Bus Terminal (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "Cebu North Bus Terminal",
+                                             "Cebu City",
+                                             "Mabolo",
+                                             "Transport Hub",
+                                             "North Reclamation Area",
+                                             "Cebu North Bus Terminal Cebu City",
+                                             "along North Reclamation Area"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-it-park",
+                             "name":  "IT Park (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "IT Park",
+                                             "Cebu City",
+                                             "Lahug",
+                                             "Business District",
+                                             "Salinas Drive",
+                                             "IT Park Cebu City",
+                                             "along Salinas Drive"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-cebu-provincial-capitol",
+                             "name":  "Cebu Provincial Capitol (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "Cebu Provincial Capitol",
+                                             "Cebu City",
+                                             "Capitol",
+                                             "Government",
+                                             "Osmeña Blvd",
+                                             "Cebu Provincial Capitol Cebu City",
+                                             "along Osmeña Blvd"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-carbon-public-market",
+                             "name":  "Carbon Public Market (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "Carbon Public Market",
+                                             "Cebu City",
+                                             "San Nicolas",
+                                             "Market",
+                                             "M.C. Briones",
+                                             "Carbon Public Market Cebu City",
+                                             "along M.C. Briones"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-parkmall",
+                             "name":  "Parkmall (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "Parkmall",
+                                             "Mandaue City",
+                                             "Subangdaku",
+                                             "Mall",
+                                             "A.C. Cortes Avenue",
+                                             "Parkmall Mandaue City",
+                                             "along A.C. Cortes Avenue"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-s-r-membership-shopping",
+                             "name":  "S\u0026R Membership Shopping (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "S\u0026R Membership Shopping",
+                                             "Mandaue City",
+                                             "Subangdaku",
+                                             "Mall",
+                                             "A.C. Cortes Avenue",
+                                             "S\u0026R Membership Shopping Mandaue City",
+                                             "along A.C. Cortes Avenue"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-university-of-cebu-lapu-lapu-mandaue",
+                             "name":  "University of Cebu Lapu-Lapu \u0026 Mandaue (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "University of Cebu Lapu-Lapu \u0026 Mandaue",
+                                             "Mandaue City",
+                                             "Tipolo",
+                                             "School",
+                                             "A.C. Cortes Avenue",
+                                             "University of Cebu Lapu-Lapu \u0026 Mandaue Mandaue City",
+                                             "along A.C. Cortes Avenue"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-mandaue-city-hall",
+                             "name":  "Mandaue City Hall (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "Mandaue City Hall",
+                                             "Mandaue City",
+                                             "Centro",
+                                             "Government",
+                                             "M.C. Briones",
+                                             "Mandaue City Hall Mandaue City",
+                                             "along M.C. Briones"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-mandaue-public-market",
+                             "name":  "Mandaue Public Market (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "Mandaue Public Market",
+                                             "Mandaue City",
+                                             "Centro",
+                                             "Market",
+                                             "M.C. Briones",
+                                             "Mandaue Public Market Mandaue City",
+                                             "along M.C. Briones"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-cebu-doctors-university",
+                             "name":  "Cebu Doctors University (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "Cebu Doctors University",
+                                             "Mandaue City",
+                                             "Umapad",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Cebu Doctors University Mandaue City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-sm-city-consolacion",
+                             "name":  "SM City Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "SM City Consolacion",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Mall",
+                                             "Cebu North Road",
+                                             "SM City Consolacion Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-fooda-saversmart-consolacion",
+                             "name":  "Fooda Saversmart Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Fooda Saversmart Consolacion",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Supermarket",
+                                             "Cebu North Road",
+                                             "Fooda Saversmart Consolacion Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-san-narciso-parish-church",
+                             "name":  "San Narciso Parish Church (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "San Narciso Parish Church",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Church",
+                                             "Cebu North Road",
+                                             "San Narciso Parish Church Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-consolacion-municipal-hall",
+                             "name":  "Consolacion Municipal Hall (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Consolacion Municipal Hall",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Consolacion Municipal Hall Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-jollibee-consolacion",
+                             "name":  "Jollibee Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Jollibee Consolacion",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Restaurant",
+                                             "Cebu North Road",
+                                             "Jollibee Consolacion Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-mcdonald-s-consolacion",
+                             "name":  "McDonald\u0027s Consolacion (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "McDonald\u0027s Consolacion",
+                                             "Consolacion",
+                                             "Lamac",
+                                             "Restaurant",
+                                             "Cebu North Road",
+                                             "McDonald\u0027s Consolacion Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-tayud-public-market",
+                             "name":  "Tayud Public Market (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Tayud Public Market",
+                                             "Consolacion",
+                                             "Tayud",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Tayud Public Market Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-tayud-barangay-hall",
+                             "name":  "Tayud Barangay Hall (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Tayud Barangay Hall",
+                                             "Consolacion",
+                                             "Tayud",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Tayud Barangay Hall Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-tayud-elementary-school",
+                             "name":  "Tayud Elementary School (Landmark)",
+                             "city":  "Consolacion",
+                             "aliases":  [
+                                             "Tayud Elementary School",
+                                             "Consolacion",
+                                             "Tayud",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Tayud Elementary School Consolacion",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Consolacion",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-britech-college",
+                             "name":  "Britech College (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Britech College",
+                                             "Liloan",
+                                             "Yati",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Britech College Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-dr-lorenzo-institute-dlic",
+                             "name":  "Dr. Lorenzo Institute (DLIC) (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Dr. Lorenzo Institute (DLIC)",
+                                             "Liloan",
+                                             "Yati",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Dr. Lorenzo Institute (DLIC) Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-petron-yati",
+                             "name":  "Petron Yati (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Petron Yati",
+                                             "Liloan",
+                                             "Yati",
+                                             "Gas Station",
+                                             "Cebu North Road",
+                                             "Petron Yati Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-jollibee-yati",
+                             "name":  "Jollibee Yati (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Jollibee Yati",
+                                             "Liloan",
+                                             "Yati",
+                                             "Restaurant",
+                                             "Cebu North Road",
+                                             "Jollibee Yati Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-yati-barangay-hall",
+                             "name":  "Yati Barangay Hall (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Yati Barangay Hall",
+                                             "Liloan",
+                                             "Yati",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Yati Barangay Hall Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-yati-public-market",
+                             "name":  "Yati Public Market (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Yati Public Market",
+                                             "Liloan",
+                                             "Yati",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Yati Public Market Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-cotcot-barangay-hall",
+                             "name":  "Cotcot Barangay Hall (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Cotcot Barangay Hall",
+                                             "Liloan",
+                                             "Cotcot",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Cotcot Barangay Hall Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-san-fernando-rey-parish",
+                             "name":  "San Fernando Rey Parish (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "San Fernando Rey Parish",
+                                             "Liloan",
+                                             "Cotcot",
+                                             "Church",
+                                             "Cebu North Road",
+                                             "San Fernando Rey Parish Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-jubay-public-market",
+                             "name":  "Jubay Public Market (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Jubay Public Market",
+                                             "Liloan",
+                                             "Jubay",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Jubay Public Market Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-jubay-barangay-hall",
+                             "name":  "Jubay Barangay Hall (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Jubay Barangay Hall",
+                                             "Liloan",
+                                             "Jubay",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Jubay Barangay Hall Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-catarman-elementary-school",
+                             "name":  "Catarman Elementary School (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Catarman Elementary School",
+                                             "Liloan",
+                                             "Catarman",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Catarman Elementary School Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-liloan-municipal-hall",
+                             "name":  "Liloan Municipal Hall (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Liloan Municipal Hall",
+                                             "Liloan",
+                                             "Catarman",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Liloan Municipal Hall Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-liloan-public-market",
+                             "name":  "Liloan Public Market (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "Liloan Public Market",
+                                             "Liloan",
+                                             "Catarman",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Liloan Public Market Liloan",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-compostela-public-market",
+                             "name":  "Compostela Public Market (Landmark)",
+                             "city":  "Compostela",
+                             "aliases":  [
+                                             "Compostela Public Market",
+                                             "Compostela",
+                                             "Poblacion",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Compostela Public Market Compostela",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-compostela-municipal-hall",
+                             "name":  "Compostela Municipal Hall (Landmark)",
+                             "city":  "Compostela",
+                             "aliases":  [
+                                             "Compostela Municipal Hall",
+                                             "Compostela",
+                                             "Poblacion",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Compostela Municipal Hall Compostela",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-st-james-parish-church",
+                             "name":  "St. James Parish Church (Landmark)",
+                             "city":  "Compostela",
+                             "aliases":  [
+                                             "St. James Parish Church",
+                                             "Compostela",
+                                             "Poblacion",
+                                             "Church",
+                                             "Cebu North Road",
+                                             "St. James Parish Church Compostela",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-estaca-elementary-school",
+                             "name":  "Estaca Elementary School (Landmark)",
+                             "city":  "Compostela",
+                             "aliases":  [
+                                             "Estaca Elementary School",
+                                             "Compostela",
+                                             "Estaca",
+                                             "School",
+                                             "Cebu North Road",
+                                             "Estaca Elementary School Compostela",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-danao-city-hall",
+                             "name":  "Danao City Hall (Landmark)",
+                             "city":  "Danao City",
+                             "aliases":  [
+                                             "Danao City Hall",
+                                             "Danao City",
+                                             "Poblacion",
+                                             "Government",
+                                             "Cebu North Road",
+                                             "Danao City Hall Danao City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-danao-public-market",
+                             "name":  "Danao Public Market (Landmark)",
+                             "city":  "Danao City",
+                             "aliases":  [
+                                             "Danao Public Market",
+                                             "Danao City",
+                                             "Poblacion",
+                                             "Market",
+                                             "Cebu North Road",
+                                             "Danao Public Market Danao City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-san-tomas-de-villanueva-parish",
+                             "name":  "San Tomas de Villanueva Parish (Landmark)",
+                             "city":  "Danao City",
+                             "aliases":  [
+                                             "San Tomas de Villanueva Parish",
+                                             "Danao City",
+                                             "Poblacion",
+                                             "Church",
+                                             "Cebu North Road",
+                                             "San Tomas de Villanueva Parish Danao City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-jollibee-danao",
+                             "name":  "Jollibee Danao (Landmark)",
+                             "city":  "Danao City",
+                             "aliases":  [
+                                             "Jollibee Danao",
+                                             "Danao City",
+                                             "Guinsay",
+                                             "Restaurant",
+                                             "Cebu North Road",
+                                             "Jollibee Danao Danao City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-robinsons-place-danao",
+                             "name":  "Robinsons Place Danao (Landmark)",
+                             "city":  "Danao City",
+                             "aliases":  [
+                                             "Robinsons Place Danao",
+                                             "Danao City",
+                                             "Guinsay",
+                                             "Mall",
+                                             "Cebu North Road",
+                                             "Robinsons Place Danao Danao City",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Danao City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-robinsons-galleria-cebu",
+                             "name":  "Robinsons Galleria Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "robinsons galleria",
+                                             "galleria cebu",
+                                             "mall",
+                                             "shop",
+                                             "Cebu City",
+                                             "Mall",
+                                             "Sergio Osmena Blvd",
+                                             "along Sergio Osmena Blvd"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-sm-j-mall",
+                             "name":  "SM J Mall (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "sm j mall",
+                                             "j mall",
+                                             "mall",
+                                             "shop",
+                                             "Mandaue City",
+                                             "Mall",
+                                             "A.S. Fortuna",
+                                             "along A.S. Fortuna"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-chong-hua-hospital-cebu",
+                             "name":  "Chong Hua Hospital Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "chong hua cebu",
+                                             "hospital",
+                                             "medical center",
+                                             "Cebu City",
+                                             "Hospital",
+                                             "Fuente Osmena",
+                                             "along Fuente Osmena"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-chong-hua-hospital-mandaue",
+                             "name":  "Chong Hua Hospital Mandaue (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "chong hua mandaue",
+                                             "hospital",
+                                             "medical center",
+                                             "Mandaue City",
+                                             "Hospital",
+                                             "Mantawi International Drive",
+                                             "along Mantawi International Drive"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-university-of-cebu-medical-center",
+                             "name":  "University of Cebu Medical Center (Landmark)",
+                             "city":  "Mandaue City",
+                             "aliases":  [
+                                             "ucmed",
+                                             "uc medical center",
+                                             "hospital",
+                                             "medical center",
+                                             "Mandaue City",
+                                             "Medical Center",
+                                             "Ouano Avenue",
+                                             "along Ouano Avenue"
+                                         ],
+                             "mappedDestination":  "Mandaue City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-cebu-doctors-university-hospital",
+                             "name":  "Cebu Doctors\u0027 University Hospital (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "cebu doctors hospital",
+                                             "cduh",
+                                             "hospital",
+                                             "medical center",
+                                             "Cebu City",
+                                             "Hospital",
+                                             "Osmena Blvd",
+                                             "along Osmena Blvd"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-vicente-sotto-memorial-medical-center",
+                             "name":  "Vicente Sotto Memorial Medical Center (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "vsmmc",
+                                             "sotto hospital",
+                                             "medical center",
+                                             "hospital",
+                                             "Cebu City",
+                                             "Medical Center",
+                                             "B. Rodriguez",
+                                             "along B. Rodriguez"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-perpetual-succour-hospital-cebu",
+                             "name":  "Perpetual Succour Hospital Cebu (Landmark)",
+                             "city":  "Cebu City",
+                             "aliases":  [
+                                             "perpetual succour",
+                                             "hospital",
+                                             "medical center",
+                                             "Cebu City",
+                                             "Hospital",
+                                             "Gorordo Avenue",
+                                             "along Gorordo Avenue"
+                                         ],
+                             "mappedDestination":  "Cebu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-gaisano-grand-mall-liloan",
+                             "name":  "Gaisano Grand Mall Liloan (Landmark)",
+                             "city":  "Liloan",
+                             "aliases":  [
+                                             "gaisano liloan",
+                                             "mall",
+                                             "shop",
+                                             "national highway liloan",
+                                             "Liloan",
+                                             "Mall",
+                                             "Cebu North Road",
+                                             "along Cebu North Road"
+                                         ],
+                             "mappedDestination":  "Liloan",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-gaisano-grand-mall-minglanilla",
+                             "name":  "Gaisano Grand Mall Minglanilla (Landmark)",
+                             "city":  "Minglanilla",
+                             "aliases":  [
+                                             "gaisano minglanilla",
+                                             "mall",
+                                             "shop",
+                                             "nat highway minglanilla",
+                                             "Minglanilla",
+                                             "Mall",
+                                             "Natalio Bacalso Avenue",
+                                             "along Natalio Bacalso Avenue"
+                                         ],
+                             "mappedDestination":  "Minglanilla",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-south-general-hospital",
+                             "name":  "South General Hospital (Landmark)",
+                             "city":  "Naga City",
+                             "aliases":  [
+                                             "south gen hospital",
+                                             "hospital naga cebu",
+                                             "medical center",
+                                             "Naga City",
+                                             "Hospital",
+                                             "Natalio Bacalso Avenue",
+                                             "along Natalio Bacalso Avenue"
+                                         ],
+                             "mappedDestination":  "Naga City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-marina-mall-mactan",
+                             "name":  "Marina Mall Mactan (Landmark)",
+                             "city":  "Lapu-Lapu City",
+                             "aliases":  [
+                                             "marina mall",
+                                             "mepz",
+                                             "shop",
+                                             "mall",
+                                             "Lapu-Lapu City",
+                                             "Mall",
+                                             "M.L. Quezon Highway",
+                                             "along M.L. Quezon Highway"
+                                         ],
+                             "mappedDestination":  "Lapu-Lapu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         },
+                         {
+                             "id":  "landmark-island-central-mactan",
+                             "name":  "Island Central Mactan (Landmark)",
+                             "city":  "Lapu-Lapu City",
+                             "aliases":  [
+                                             "island central",
+                                             "mactan island central",
+                                             "mall",
+                                             "shop",
+                                             "Lapu-Lapu City",
+                                             "Mall",
+                                             "M.L. Quezon Highway",
+                                             "along M.L. Quezon Highway"
+                                         ],
+                             "mappedDestination":  "Lapu-Lapu City",
+                             "modes":  [
+                                           "bus",
+                                           "jeep"
+                                       ]
+                         }
+                     ],
+    "pickups":  [
+                    {
+                        "id":  "pickup-landmark-fuente",
+                        "name":  "Fuente Osmena Circle (Landmark Pickup)",
+                        "corridor":  "N8",
+                        "aliases":  [
+                                        "fuente pickup",
+                                        "osmena circle pickup"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.3124,
+                        "lng":  123.8941
+                    },
+                    {
+                        "id":  "pickup-landmark-ayala",
+                        "name":  "Ayala Center Cebu (Landmark Pickup)",
+                        "corridor":  "Cebu Business Park",
+                        "aliases":  [
+                                        "ayala pickup",
+                                        "ayala center pickup"
+                                    ],
+                        "mappedPickup":  "IT Park, Cebu City",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.318,
+                        "lng":  123.9054
+                    },
+                    {
+                        "id":  "pickup-landmark-sm-seaside",
+                        "name":  "SM Seaside City Cebu (Landmark Pickup)",
+                        "corridor":  "SRP",
+                        "aliases":  [
+                                        "sm seaside pickup",
+                                        "srp pickup"
+                                    ],
+                        "mappedPickup":  "Cebu South Bus Terminal (N. Bacalso Ave)",
+                        "modes":  [
+                                      "bus"
+                                  ],
+                        "lat":  10.2816,
+                        "lng":  123.8808
+                    },
+                    {
+                        "id":  "pickup-landmark-carbon",
+                        "name":  "Carbon Market (Landmark Pickup)",
+                        "corridor":  "Downtown Cebu",
+                        "aliases":  [
+                                        "carbon pickup",
+                                        "carbon market pickup"
+                                    ],
+                        "mappedPickup":  "Cebu South Bus Terminal (N. Bacalso Ave)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.2922,
+                        "lng":  123.9018
+                    },
+                    {
+                        "id":  "pickup-landmark-magellan",
+                        "name":  "Magellan\u0027s Cross (Landmark Pickup)",
+                        "corridor":  "Downtown Cebu",
+                        "aliases":  [
+                                        "magellans cross pickup"
+                                    ],
+                        "mappedPickup":  "Cebu South Bus Terminal (N. Bacalso Ave)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.293,
+                        "lng":  123.9022
+                    },
+                    {
+                        "id":  "pickup-landmark-mactan-shrine",
+                        "name":  "Mactan Shrine (Landmark Pickup)",
+                        "corridor":  "Mactan",
+                        "aliases":  [
+                                        "lapu lapu shrine pickup",
+                                        "mactan pickup"
+                                    ],
+                        "mappedPickup":  "Mactan Newtown Terminal",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.3116,
+                        "lng":  124.0156
+                    },
+                    {
+                        "id":  "pickup-landmark-fooda-consolacion",
+                        "name":  "Fooda Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road (N810)",
+                        "aliases":  [
+                                        "fooda consolacion pickup",
+                                        "fooda n810 pickup"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.3781,
+                        "lng":  123.9578
+                    },
+                    {
+                        "id":  "pickup-landmark-sm-consolacion",
+                        "name":  "SM Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road (N810)",
+                        "aliases":  [
+                                        "sm consolacion pickup"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ],
+                        "lat":  10.38064,
+                        "lng":  123.96433
+                    },
+                    {
+                        "id":  "pickup-landmark-sm-city-cebu",
+                        "name":  "SM City Cebu (Landmark Pickup)",
+                        "corridor":  "North Reclamation Area",
+                        "aliases":  [
+                                        "SM City Cebu",
+                                        "Cebu City",
+                                        "Mabolo",
+                                        "Mall",
+                                        "North Reclamation Area",
+                                        "SM City Cebu Cebu City",
+                                        "along North Reclamation Area"
+                                    ],
+                        "mappedPickup":  "Cebu North Bus Terminal (SM City Cebu)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-cebu-north-bus-terminal",
+                        "name":  "Cebu North Bus Terminal (Landmark Pickup)",
+                        "corridor":  "North Reclamation Area",
+                        "aliases":  [
+                                        "Cebu North Bus Terminal",
+                                        "Cebu City",
+                                        "Mabolo",
+                                        "Transport Hub",
+                                        "North Reclamation Area",
+                                        "Cebu North Bus Terminal Cebu City",
+                                        "along North Reclamation Area"
+                                    ],
+                        "mappedPickup":  "Cebu North Bus Terminal (SM City Cebu)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-it-park",
+                        "name":  "IT Park (Landmark Pickup)",
+                        "corridor":  "Salinas Drive",
+                        "aliases":  [
+                                        "IT Park",
+                                        "Cebu City",
+                                        "Lahug",
+                                        "Business District",
+                                        "Salinas Drive",
+                                        "IT Park Cebu City",
+                                        "along Salinas Drive"
+                                    ],
+                        "mappedPickup":  "IT Park, Cebu City",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-cebu-provincial-capitol",
+                        "name":  "Cebu Provincial Capitol (Landmark Pickup)",
+                        "corridor":  "Osmeña Blvd",
+                        "aliases":  [
+                                        "Cebu Provincial Capitol",
+                                        "Cebu City",
+                                        "Capitol",
+                                        "Government",
+                                        "Osmeña Blvd",
+                                        "Cebu Provincial Capitol Cebu City",
+                                        "along Osmeña Blvd"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-carbon-public-market",
+                        "name":  "Carbon Public Market (Landmark Pickup)",
+                        "corridor":  "M.C. Briones",
+                        "aliases":  [
+                                        "Carbon Public Market",
+                                        "Cebu City",
+                                        "San Nicolas",
+                                        "Market",
+                                        "M.C. Briones",
+                                        "Carbon Public Market Cebu City",
+                                        "along M.C. Briones"
+                                    ],
+                        "mappedPickup":  "Cebu South Bus Terminal (N. Bacalso Ave)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-parkmall",
+                        "name":  "Parkmall (Landmark Pickup)",
+                        "corridor":  "A.C. Cortes Avenue",
+                        "aliases":  [
+                                        "Parkmall",
+                                        "Mandaue City",
+                                        "Subangdaku",
+                                        "Mall",
+                                        "A.C. Cortes Avenue",
+                                        "Parkmall Mandaue City",
+                                        "along A.C. Cortes Avenue"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-s-r-membership-shopping",
+                        "name":  "S\u0026R Membership Shopping (Landmark Pickup)",
+                        "corridor":  "A.C. Cortes Avenue",
+                        "aliases":  [
+                                        "S\u0026R Membership Shopping",
+                                        "Mandaue City",
+                                        "Subangdaku",
+                                        "Mall",
+                                        "A.C. Cortes Avenue",
+                                        "S\u0026R Membership Shopping Mandaue City",
+                                        "along A.C. Cortes Avenue"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-university-of-cebu-lapu-lapu-mandaue",
+                        "name":  "University of Cebu Lapu-Lapu \u0026 Mandaue (Landmark Pickup)",
+                        "corridor":  "A.C. Cortes Avenue",
+                        "aliases":  [
+                                        "University of Cebu Lapu-Lapu \u0026 Mandaue",
+                                        "Mandaue City",
+                                        "Tipolo",
+                                        "School",
+                                        "A.C. Cortes Avenue",
+                                        "University of Cebu Lapu-Lapu \u0026 Mandaue Mandaue City",
+                                        "along A.C. Cortes Avenue"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-mandaue-city-hall",
+                        "name":  "Mandaue City Hall (Landmark Pickup)",
+                        "corridor":  "M.C. Briones",
+                        "aliases":  [
+                                        "Mandaue City Hall",
+                                        "Mandaue City",
+                                        "Centro",
+                                        "Government",
+                                        "M.C. Briones",
+                                        "Mandaue City Hall Mandaue City",
+                                        "along M.C. Briones"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-mandaue-public-market",
+                        "name":  "Mandaue Public Market (Landmark Pickup)",
+                        "corridor":  "M.C. Briones",
+                        "aliases":  [
+                                        "Mandaue Public Market",
+                                        "Mandaue City",
+                                        "Centro",
+                                        "Market",
+                                        "M.C. Briones",
+                                        "Mandaue Public Market Mandaue City",
+                                        "along M.C. Briones"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-cebu-doctors-university",
+                        "name":  "Cebu Doctors University (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Cebu Doctors University",
+                                        "Mandaue City",
+                                        "Umapad",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Cebu Doctors University Mandaue City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-sm-city-consolacion",
+                        "name":  "SM City Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "SM City Consolacion",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Mall",
+                                        "Cebu North Road",
+                                        "SM City Consolacion Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-fooda-saversmart-consolacion",
+                        "name":  "Fooda Saversmart Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Fooda Saversmart Consolacion",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Supermarket",
+                                        "Cebu North Road",
+                                        "Fooda Saversmart Consolacion Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-san-narciso-parish-church",
+                        "name":  "San Narciso Parish Church (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "San Narciso Parish Church",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Church",
+                                        "Cebu North Road",
+                                        "San Narciso Parish Church Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-consolacion-municipal-hall",
+                        "name":  "Consolacion Municipal Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Consolacion Municipal Hall",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Consolacion Municipal Hall Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-jollibee-consolacion",
+                        "name":  "Jollibee Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Jollibee Consolacion",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Restaurant",
+                                        "Cebu North Road",
+                                        "Jollibee Consolacion Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-mcdonald-s-consolacion",
+                        "name":  "McDonald\u0027s Consolacion (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "McDonald\u0027s Consolacion",
+                                        "Consolacion",
+                                        "Lamac",
+                                        "Restaurant",
+                                        "Cebu North Road",
+                                        "McDonald\u0027s Consolacion Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-tayud-public-market",
+                        "name":  "Tayud Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Tayud Public Market",
+                                        "Consolacion",
+                                        "Tayud",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Tayud Public Market Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-tayud-barangay-hall",
+                        "name":  "Tayud Barangay Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Tayud Barangay Hall",
+                                        "Consolacion",
+                                        "Tayud",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Tayud Barangay Hall Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-tayud-elementary-school",
+                        "name":  "Tayud Elementary School (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Tayud Elementary School",
+                                        "Consolacion",
+                                        "Tayud",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Tayud Elementary School Consolacion",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Consolacion - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-britech-college",
+                        "name":  "Britech College (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Britech College",
+                                        "Liloan",
+                                        "Yati",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Britech College Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-dr-lorenzo-institute-dlic",
+                        "name":  "Dr. Lorenzo Institute (DLIC) (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Dr. Lorenzo Institute (DLIC)",
+                                        "Liloan",
+                                        "Yati",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Dr. Lorenzo Institute (DLIC) Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-petron-yati",
+                        "name":  "Petron Yati (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Petron Yati",
+                                        "Liloan",
+                                        "Yati",
+                                        "Gas Station",
+                                        "Cebu North Road",
+                                        "Petron Yati Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-jollibee-yati",
+                        "name":  "Jollibee Yati (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Jollibee Yati",
+                                        "Liloan",
+                                        "Yati",
+                                        "Restaurant",
+                                        "Cebu North Road",
+                                        "Jollibee Yati Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-yati-barangay-hall",
+                        "name":  "Yati Barangay Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Yati Barangay Hall",
+                                        "Liloan",
+                                        "Yati",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Yati Barangay Hall Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-yati-public-market",
+                        "name":  "Yati Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Yati Public Market",
+                                        "Liloan",
+                                        "Yati",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Yati Public Market Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-cotcot-barangay-hall",
+                        "name":  "Cotcot Barangay Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Cotcot Barangay Hall",
+                                        "Liloan",
+                                        "Cotcot",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Cotcot Barangay Hall Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-san-fernando-rey-parish",
+                        "name":  "San Fernando Rey Parish (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "San Fernando Rey Parish",
+                                        "Liloan",
+                                        "Cotcot",
+                                        "Church",
+                                        "Cebu North Road",
+                                        "San Fernando Rey Parish Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-jubay-public-market",
+                        "name":  "Jubay Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Jubay Public Market",
+                                        "Liloan",
+                                        "Jubay",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Jubay Public Market Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-jubay-barangay-hall",
+                        "name":  "Jubay Barangay Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Jubay Barangay Hall",
+                                        "Liloan",
+                                        "Jubay",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Jubay Barangay Hall Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-catarman-elementary-school",
+                        "name":  "Catarman Elementary School (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Catarman Elementary School",
+                                        "Liloan",
+                                        "Catarman",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Catarman Elementary School Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-liloan-municipal-hall",
+                        "name":  "Liloan Municipal Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Liloan Municipal Hall",
+                                        "Liloan",
+                                        "Catarman",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Liloan Municipal Hall Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-liloan-public-market",
+                        "name":  "Liloan Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Liloan Public Market",
+                                        "Liloan",
+                                        "Catarman",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Liloan Public Market Liloan",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-compostela-public-market",
+                        "name":  "Compostela Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Compostela Public Market",
+                                        "Compostela",
+                                        "Poblacion",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Compostela Public Market Compostela",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-compostela-municipal-hall",
+                        "name":  "Compostela Municipal Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Compostela Municipal Hall",
+                                        "Compostela",
+                                        "Poblacion",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Compostela Municipal Hall Compostela",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-st-james-parish-church",
+                        "name":  "St. James Parish Church (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "St. James Parish Church",
+                                        "Compostela",
+                                        "Poblacion",
+                                        "Church",
+                                        "Cebu North Road",
+                                        "St. James Parish Church Compostela",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-estaca-elementary-school",
+                        "name":  "Estaca Elementary School (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Estaca Elementary School",
+                                        "Compostela",
+                                        "Estaca",
+                                        "School",
+                                        "Cebu North Road",
+                                        "Estaca Elementary School Compostela",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-danao-city-hall",
+                        "name":  "Danao City Hall (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Danao City Hall",
+                                        "Danao City",
+                                        "Poblacion",
+                                        "Government",
+                                        "Cebu North Road",
+                                        "Danao City Hall Danao City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-danao-public-market",
+                        "name":  "Danao Public Market (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Danao Public Market",
+                                        "Danao City",
+                                        "Poblacion",
+                                        "Market",
+                                        "Cebu North Road",
+                                        "Danao Public Market Danao City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-san-tomas-de-villanueva-parish",
+                        "name":  "San Tomas de Villanueva Parish (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "San Tomas de Villanueva Parish",
+                                        "Danao City",
+                                        "Poblacion",
+                                        "Church",
+                                        "Cebu North Road",
+                                        "San Tomas de Villanueva Parish Danao City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-jollibee-danao",
+                        "name":  "Jollibee Danao (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Jollibee Danao",
+                                        "Danao City",
+                                        "Guinsay",
+                                        "Restaurant",
+                                        "Cebu North Road",
+                                        "Jollibee Danao Danao City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-robinsons-place-danao",
+                        "name":  "Robinsons Place Danao (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "Robinsons Place Danao",
+                                        "Danao City",
+                                        "Guinsay",
+                                        "Mall",
+                                        "Cebu North Road",
+                                        "Robinsons Place Danao Danao City",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Danao City - National Road (N8/N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-robinsons-galleria-cebu",
+                        "name":  "Robinsons Galleria Cebu (Landmark Pickup)",
+                        "corridor":  "Sergio Osmena Blvd",
+                        "aliases":  [
+                                        "robinsons galleria",
+                                        "galleria cebu",
+                                        "mall",
+                                        "shop",
+                                        "Cebu City",
+                                        "Mall",
+                                        "Sergio Osmena Blvd",
+                                        "along Sergio Osmena Blvd"
+                                    ],
+                        "mappedPickup":  "Cebu North Bus Terminal (SM City Cebu)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-sm-j-mall",
+                        "name":  "SM J Mall (Landmark Pickup)",
+                        "corridor":  "A.S. Fortuna",
+                        "aliases":  [
+                                        "sm j mall",
+                                        "j mall",
+                                        "mall",
+                                        "shop",
+                                        "Mandaue City",
+                                        "Mall",
+                                        "A.S. Fortuna",
+                                        "along A.S. Fortuna"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-chong-hua-hospital-cebu",
+                        "name":  "Chong Hua Hospital Cebu (Landmark Pickup)",
+                        "corridor":  "Fuente Osmena",
+                        "aliases":  [
+                                        "chong hua cebu",
+                                        "hospital",
+                                        "medical center",
+                                        "Cebu City",
+                                        "Hospital",
+                                        "Fuente Osmena",
+                                        "along Fuente Osmena"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-chong-hua-hospital-mandaue",
+                        "name":  "Chong Hua Hospital Mandaue (Landmark Pickup)",
+                        "corridor":  "Mantawi International Drive",
+                        "aliases":  [
+                                        "chong hua mandaue",
+                                        "hospital",
+                                        "medical center",
+                                        "Mandaue City",
+                                        "Hospital",
+                                        "Mantawi International Drive",
+                                        "along Mantawi International Drive"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-university-of-cebu-medical-center",
+                        "name":  "University of Cebu Medical Center (Landmark Pickup)",
+                        "corridor":  "Ouano Avenue",
+                        "aliases":  [
+                                        "ucmed",
+                                        "uc medical center",
+                                        "hospital",
+                                        "medical center",
+                                        "Mandaue City",
+                                        "Medical Center",
+                                        "Ouano Avenue",
+                                        "along Ouano Avenue"
+                                    ],
+                        "mappedPickup":  "Mandaue - M.C. Briones (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-cebu-doctors-university-hospital",
+                        "name":  "Cebu Doctors\u0027 University Hospital (Landmark Pickup)",
+                        "corridor":  "Osmena Blvd",
+                        "aliases":  [
+                                        "cebu doctors hospital",
+                                        "cduh",
+                                        "hospital",
+                                        "medical center",
+                                        "Cebu City",
+                                        "Hospital",
+                                        "Osmena Blvd",
+                                        "along Osmena Blvd"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-vicente-sotto-memorial-medical-center",
+                        "name":  "Vicente Sotto Memorial Medical Center (Landmark Pickup)",
+                        "corridor":  "B. Rodriguez",
+                        "aliases":  [
+                                        "vsmmc",
+                                        "sotto hospital",
+                                        "medical center",
+                                        "hospital",
+                                        "Cebu City",
+                                        "Medical Center",
+                                        "B. Rodriguez",
+                                        "along B. Rodriguez"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-perpetual-succour-hospital-cebu",
+                        "name":  "Perpetual Succour Hospital Cebu (Landmark Pickup)",
+                        "corridor":  "Gorordo Avenue",
+                        "aliases":  [
+                                        "perpetual succour",
+                                        "hospital",
+                                        "medical center",
+                                        "Cebu City",
+                                        "Hospital",
+                                        "Gorordo Avenue",
+                                        "along Gorordo Avenue"
+                                    ],
+                        "mappedPickup":  "Cebu City - Fuente Osmena (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-gaisano-grand-mall-liloan",
+                        "name":  "Gaisano Grand Mall Liloan (Landmark Pickup)",
+                        "corridor":  "Cebu North Road",
+                        "aliases":  [
+                                        "gaisano liloan",
+                                        "mall",
+                                        "shop",
+                                        "national highway liloan",
+                                        "Liloan",
+                                        "Mall",
+                                        "Cebu North Road",
+                                        "along Cebu North Road"
+                                    ],
+                        "mappedPickup":  "Liloan - Cebu North Road (N810)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-gaisano-grand-mall-minglanilla",
+                        "name":  "Gaisano Grand Mall Minglanilla (Landmark Pickup)",
+                        "corridor":  "Natalio Bacalso Avenue",
+                        "aliases":  [
+                                        "gaisano minglanilla",
+                                        "mall",
+                                        "shop",
+                                        "nat highway minglanilla",
+                                        "Minglanilla",
+                                        "Mall",
+                                        "Natalio Bacalso Avenue",
+                                        "along Natalio Bacalso Avenue"
+                                    ],
+                        "mappedPickup":  "Minglanilla - Cebu South Road (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-south-general-hospital",
+                        "name":  "South General Hospital (Landmark Pickup)",
+                        "corridor":  "Natalio Bacalso Avenue",
+                        "aliases":  [
+                                        "south gen hospital",
+                                        "hospital naga cebu",
+                                        "medical center",
+                                        "Naga City",
+                                        "Hospital",
+                                        "Natalio Bacalso Avenue",
+                                        "along Natalio Bacalso Avenue"
+                                    ],
+                        "mappedPickup":  "Naga City - Cebu South Road (N8)",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-marina-mall-mactan",
+                        "name":  "Marina Mall Mactan (Landmark Pickup)",
+                        "corridor":  "M.L. Quezon Highway",
+                        "aliases":  [
+                                        "marina mall",
+                                        "mepz",
+                                        "shop",
+                                        "mall",
+                                        "Lapu-Lapu City",
+                                        "Mall",
+                                        "M.L. Quezon Highway",
+                                        "along M.L. Quezon Highway"
+                                    ],
+                        "mappedPickup":  "Marina Mall - M.L. Quezon Highway",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    },
+                    {
+                        "id":  "pickup-landmark-island-central-mactan",
+                        "name":  "Island Central Mactan (Landmark Pickup)",
+                        "corridor":  "M.L. Quezon Highway",
+                        "aliases":  [
+                                        "island central",
+                                        "mactan island central",
+                                        "mall",
+                                        "shop",
+                                        "Lapu-Lapu City",
+                                        "Mall",
+                                        "M.L. Quezon Highway",
+                                        "along M.L. Quezon Highway"
+                                    ],
+                        "mappedPickup":  "Marina Mall - M.L. Quezon Highway",
+                        "modes":  [
+                                      "bus",
+                                      "jeep"
+                                  ]
+                    }
+                ]
+}

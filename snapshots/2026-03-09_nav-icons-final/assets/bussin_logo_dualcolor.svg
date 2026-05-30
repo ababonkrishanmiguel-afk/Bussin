@@ -1,0 +1,24 @@
+
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Icon -->
+  <!-- Left diamond -->
+  <polygon points="80,150 150,80 220,150 150,220" fill="#FFA500"/>
+  
+  <!-- Top B curve -->
+  <rect x="220" y="70" width="160" height="90" rx="45" ry="45" fill="#FF6B00"/>
+  
+  <!-- Bottom B curve -->
+  <rect x="220" y="150" width="160" height="90" rx="45" ry="45" fill="#FF6B00"/>
+
+  <!-- BUSSIN text -->
+  <text x="420" y="185"
+        font-family="Poppins, Montserrat, Arial, sans-serif"
+        font-size="110"
+        font-weight="700"
+        fill="#FF6B00"
+        letter-spacing="6">
+        BUSSIN
+  </text>
+
+</svg>
